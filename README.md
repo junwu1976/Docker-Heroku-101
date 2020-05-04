@@ -1,12 +1,11 @@
 # Deploying Docker images to Heroku 101
 
-Guide for deploying Docker containers in Heroku
-
+This guide will walk us through the process of deploying a Docker container on popular cloud platform Heroku. 
 ## Prerequsites
 
-Before setting off on this guide please ensure you have a Heroku account, if you don't already you can get it from [here](https://id.heroku.com/login). For now just create an account we'll do the rest in our guide.
+Before setting off on this guide please ensure you have a Heroku account, if you don't already you can get it from [here](https://id.heroku.com/login). For now all you need to do is create an account we'll cover the rest in our guide.
 
-You'll also need the Heroku CLI tools which you can get from [here](https://devcenter.heroku.com/articles/heroku-cli) or if you're on a mac and have Homebrew installed simply run the below command
+You'll also need the Heroku CLI tools which you can get from [here](https://devcenter.heroku.com/articles/heroku-cli) or if you're on a mac and have Homebrew installed simply run the below command:
 
 ```
 brew tap heroku/brew && brew install heroku
@@ -19,6 +18,7 @@ Once Heroku CLI tools are installed the next stage is to login to your Heroku ac
 ```
 heroku login
 ```
+
 ![](images/heroku-login.gif)
 
 We'll also need Docker set up locally to continue. To check this, you should see output when you run this command.

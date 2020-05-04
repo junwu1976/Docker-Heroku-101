@@ -31,6 +31,9 @@ Now you can sign into Container Registry, again this should just launch a web re
 $ heroku container:login
 ```
 
+![](images/container-login.gif)
+
+
 Before we do anything we need an app within heroku to deploy to, you can do this with the command ```heroku create``` or through the heroku dashboard when you are logged in
 
 ``` 
@@ -51,16 +54,24 @@ Use the following command to push your Docker based app to Heroku. Make sure you
 $ heroku container:push web --app={YOUR-APP-NAME}
 ````
 
+![](images/container-push.gif)
+
+
 Deploy the changes
 
-Release the newly pushed images to deploy your app.
+Now to release the newly pushed images to deploy your app.
 
 ```
 $ heroku container:release web --app={YOUR-APP-NAME}
 ```
 
+![](images/app-release.gif)
+
+
 Note: Ensure your Dockerfile has a capital 'D' as the Heroku CLI tooks won't recognise it if you don't. Learn from my wasted few hours on this.
 
-Now naviate to 
+Now naviate to dashboard.heroku.com and find your app from the screens. When you select the app you should be able to navigate to open app on the top right hand corner like the graphic below and see that our simple Web server on our container is working.
+
+![](images/app-working.gif)
 
 Congratulations you've now deployed your app to Heroku!

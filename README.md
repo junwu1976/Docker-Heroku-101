@@ -19,7 +19,7 @@ Once Heroku CLI tools are installed the next stage is to login to your Heroku ac
 ```
 heroku login
 ```
-![](images/heroku-login.gif
+![](images/heroku-login.gif)
 
 We'll also need Docker set up locally to continue. To check this, you should see output when you run this command.
 

@@ -1,4 +1,5 @@
-# Docker-Heroku-101
+# Deploying Docker images to Heroku 101
+
 Guide for deploying Docker containers in Heroku
 
 ## Prerequsites
@@ -18,6 +19,7 @@ Once Heroku CLI tools are installed the next stage is to login to your Heroku ac
 ```
 heroku login
 ```
+![](images/heroku-login.gif
 
 We'll also need Docker set up locally to continue. To check this, you should see output when you run this command.
 
@@ -39,6 +41,7 @@ Before we do anything we need an app within heroku to deploy to, you can do this
 ``` 
 heroku create {YOUR-APP-NAME}
 ```
+![](images/heroku-create-app.gif)
 
 Now we're all logged in. it's time push your Docker-based app up to Heroku. This could be done with GCP, AWS or Azure however the process obviously differs between clouds.
 

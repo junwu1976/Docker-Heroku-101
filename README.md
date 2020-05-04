@@ -12,7 +12,7 @@ You'll also need the Heroku CLI tools which you can get from [here](https://devc
 brew tap heroku/brew && brew install heroku
 ```
 
-## Exercise 1
+## Getting Started
 
 Once Heroku CLI tools are installed the next stage is to login to your Heroku account, the command below should launch a web redirect.
 
@@ -58,9 +58,6 @@ $ heroku container:push web --app={YOUR-APP-NAME}
 ````
 
 ![](images/container-push.gif)
-
-
-Deploy the changes
 
 Now to release the newly pushed images to deploy your app.
 

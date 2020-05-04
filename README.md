@@ -48,7 +48,7 @@ FROM vismaior89/sinatra-docker-demo:latest
 Use the following command to push your Docker based app to Heroku. Make sure you're in the same directory as your Dockerfile when you run this command.
 
 ```
-$ heroku container:push web -app={YOUR-APP-NAME}
+$ heroku container:push web --app={YOUR-APP-NAME}
 ````
 
 Deploy the changes
@@ -56,7 +56,7 @@ Deploy the changes
 Release the newly pushed images to deploy your app.
 
 ```
-$ heroku container:release web -app={YOUR-APP-NAME}
+$ heroku container:release web --app={YOUR-APP-NAME}
 ```
 
 Note: Ensure your Dockerfile has a capital 'D' as the Heroku CLI tooks won't recognise it if you don't. Learn from my wasted few hours on this.

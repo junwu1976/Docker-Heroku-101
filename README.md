@@ -1,13 +1,17 @@
 # Docker-Heroku-101
 Guide for deploying Docker containers in Heroku
 
-Before setting off on this guide please ensure you have a Heroku account
+## Prerequsites
+
+Before setting off on this guide please ensure you have a Heroku account, if you don't already you can get it from [here](https://id.heroku.com/login). For now just create an account we'll do the rest in our guide.
 
 You'll also need the Heroku CLI tools which you can get from [here](https://devcenter.heroku.com/articles/heroku-cli) or if you're on a mac and have Homebrew installed simply run the below command
 
 ```
 brew tap heroku/brew && brew install heroku
 ```
+
+## Exercise 1
 
 Once Heroku CLI tools are installed the next stage is to login to your Heroku account, the command below should launch a web redirect.
 
@@ -26,9 +30,16 @@ Now you can sign into Container Registry, again this should just launch a web re
 ```
 $ heroku container:login
 ```
+
+Before we do anything we need an app within heroku to deploy to, you can do this with the command ```heroku create``` or through the heroku dashboard when you are logged in
+
+``` 
+heroku create {YOUR-APP-NAME}
+```
+
 Now we're all logged in. it's time push your Docker-based app up to Heroku. This could be done with GCP, AWS or Azure however the process obviously differs between clouds.
 
-Build the Dockerfile in the current directory and push the Docker image. In this example I have a very simple Dockerfile that takes the image from the Docker 201 exercise and simply runs that as is.
+Build the Dockerfile in the current directory and push the Docker image. In this example we have a very simple Dockerfile that takes the image from the Docker 201 exercise and simply runs that as is. You can also find this file within the example folder of this repo
 
 ```
 FROM vismaior89/sinatra-docker-demo:latest
@@ -50,3 +61,6 @@ $ heroku container:release web -app={YOUR-APP-NAME}
 
 Note: Ensure your Dockerfile has a capital 'D' as the Heroku CLI tooks won't recognise it if you don't. Learn from my wasted few hours on this.
 
+Now naviate to 
+
+Congratulations you've now deployed your app to Heroku!

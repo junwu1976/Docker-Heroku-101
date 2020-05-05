@@ -72,6 +72,8 @@ Note: Ensure your Dockerfile has a capital 'D' as the Heroku CLI tooks won't rec
 
 Now naviate to dashboard.heroku.com and find your app from the screens. When you select the app you should be able to navigate to open app on the top right hand corner like the graphic below and see that our simple Web server on our container is working.
 
+https://code-clan-app-jun123.herokuapp.com/hello-world
+
 ![](images/app-working.gif)
 
 Congratulations you've now deployed your app to Heroku!
